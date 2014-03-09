@@ -15,7 +15,7 @@
 /*jslint nomen: true, regexp: true */
 /*global window, atob, Blob, ArrayBuffer, Uint8Array, define */
 
-(function (window) {
+(function () {
     'use strict';
     var CanvasPrototype = window.HTMLCanvasElement &&
             window.HTMLCanvasElement.prototype,
@@ -92,4 +92,4 @@
     } else {
         window.dataURLtoBlob = dataURLtoBlob;
     }
-}(this));
+}());
